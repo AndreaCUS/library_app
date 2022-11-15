@@ -13,7 +13,7 @@ CREATE TABLE Books (
 		BookID int NOT NULL AUTO_INCREMENT,
     AuthorID int,
     BookTitle VARCHAR(150) NOT NULL,
-    BookYear YEAR NOT NULL,
+    BookYear INT NOT NULL,
     PRIMARY KEY (BookID),
     FOREIGN KEY (AuthorID) REFERENCES Authors(AuthorID)
 	);
